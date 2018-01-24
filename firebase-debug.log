@@ -1,0 +1,43 @@
+[debug] [2018-01-24T05:26:14.387Z] ----------------------------------------------------------------------
+[debug] [2018-01-24T05:26:14.389Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-01-24T05:26:14.389Z] CLI Version:   3.16.0
+[debug] [2018-01-24T05:26:14.389Z] Platform:      darwin
+[debug] [2018-01-24T05:26:14.390Z] Node Version:  v8.6.0
+[debug] [2018-01-24T05:26:14.392Z] Time:          Wed Jan 24 2018 15:26:14 GMT+1000 (AEST)
+[debug] [2018-01-24T05:26:14.392Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-24T05:26:14.404Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-24T05:26:14.404Z] > authorizing via signed-in user
+[debug] [2018-01-24T05:26:14.406Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/forfido-167803  
+  
+ Wed Jan 24 2018 15:26:14 GMT+1000 (AEST)
+[debug] [2018-01-24T05:26:16.388Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-24T05:26:16.389Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/forfido-167803/tokens  
+  
+ Wed Jan 24 2018 15:26:16 GMT+1000 (AEST)
+[debug] [2018-01-24T05:26:17.404Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'forfido-167803'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-01-24T05:26:19.051Z] >>> HTTP REQUEST PUT https://forfido-167803.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
+ 
+ Wed Jan 24 2018 15:26:19 GMT+1000 (AEST)
+[debug] [2018-01-24T05:26:20.176Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database forfido-167803 is valid
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-01-24T05:26:21.569Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/forfido-167803/uploads/-L3acOXVm5_XFumZwwAH?fileCount=37&message=  
+  
+ Wed Jan 24 2018 15:26:21 GMT+1000 (AEST)
+[debug] [2018-01-24T05:34:12.569Z] Error: write EPIPE
+    at _errnoException (util.js:1019:11)
+    at WriteWrap.afterWrite [as oncomplete] (net.js:860:14)
+[error] 
+[error] Error: Server Error. write EPIPE
